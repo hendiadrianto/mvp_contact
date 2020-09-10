@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">room_mvp</string>
+    <string name="app_name">Hendi Adrianto</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
