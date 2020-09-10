@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/id_card_login"
+        android:layout_marginBottom="@dimen/margin_large"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Hendi Adrianto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id_card_login"
+        android:layout_marginEnd="@dimen/layout_height_kecil_banget"
+        android:layout_marginStart="@dimen/layout_height_kecil_banget"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:cardCornerRadius="@dimen/margin_large"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/id_text_login"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_large"
+                android:textSize="@dimen/text_toolbar"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/layout_height_kecil_banget"
+                android:id="@+id/id_l_user"
+                android:layout_marginStart="@dimen/layout_height_kecil_banget"
+                android:layout_marginEnd="@dimen/layout_height_kecil_banget"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/id_text_login"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:hint="username"
+                    android:id="@+id/id_user_login"
+                    android:layout_height="wrap_content" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_height_kecil_banget"
+                android:layout_marginEnd="@dimen/layout_height_kecil_banget"
+                app:errorEnabled="true"
+                android:id="@+id/id_l_email"
+                app:layout_constraintTop_toBottomOf="@id/id_l_user"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:hint="e-mail"
+                    android:id="@+id/id_email_login"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_height_kecil_banget"
+                android:layout_marginEnd="@dimen/layout_height_kecil_banget"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:id="@+id/id_l_pass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/id_l_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:hint="password"
+                    android:id="@+id/id_pass_login"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/id_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/layout_height_kecil_banget"
+                android:layout_marginEnd="@dimen/layout_height_kecil_banget"
+                android:background="@drawable/btn_login"
+                android:text="Login"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/id_l_pass"
+                app:layout_constraintHeight_percent=".13" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:elevation="8dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintWidth_percent=".15"
+        app:layout_constraintEnd_toEndOf="@id/id_card"
+        app:layout_constraintBottom_toBottomOf="@id/id_card"
+        app:layout_constraintTop_toTopOf="@id/id_card"
+        android:background="@drawable/ic_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/id_card"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:cardCornerRadius="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="@dimen/margin_small"
+                android:id="@+id/id_photo_cuser"
+                android:layout_width="70dp"
+                android:scaleType="centerCrop"
+                android:layout_height="70dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/id_photo_cuser"
+                android:layout_toRightOf="@id/id_photo_cuser"
+                android:orientation="vertical">
+
+                <TextView
+                    android:hint="hhhhh"
+                    android:id="@+id/id_nama_cuser"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:textSize="@dimen/text_font_besar"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:hint="hhhhh"
+                    android:textSize="@dimen/text_font_kecil"
+                    android:id="@+id/id_email_cuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+
+                <TextView
+                    android:hint="hhhhh"
+                    android:textSize="@dimen/text_font_kecil"
+                    android:id="@+id/id_nohp_cuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

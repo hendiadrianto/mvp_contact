@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+
+    <dimen name="text_font_kecil_banget">11sp</dimen>
+    <dimen name="text_font_kecil">13sp</dimen>
+    <dimen name="text_font_sedang">15sp</dimen>
+    <dimen name="text_font_besar">17sp</dimen>
+    <dimen name="text_font_besar_banget">20sp</dimen>
+    <dimen name="text_toolbar">25sp</dimen>
+
+    <dimen name="layout_height_kecil_banget">25dp</dimen>
+    <dimen name="layout_height_kecil">30dp</dimen>
+    <dimen name="layout_height_sedang">35dp</dimen>
+    <dimen name="layout_height_besar">40dp</dimen>
+    <dimen name="layout_height_besar_banget">50dp</dimen>
+    <dimen name="layout_height_xxl">60dp</dimen>
+
+    <dimen name="height_InputText">55dp</dimen>
+</resources>
